@@ -72,20 +72,22 @@ sheep-age-detection/
 ## ▶️ How to Use
 
 ### Load Keras Model
-
+```python
 from tensorflow.keras.models import load_model
+
 model = load_model('model/sheep_age_model.h5')
 ````
 
 ### Load TensorFlow Lite Model
 
+```python
 import tensorflow as tf
 
 interpreter = tf.lite.Interpreter(
     model_path="model/sheep_age_model.tflite"
 )
 interpreter.allocate_tensors()
-
+```
 
 ---
 
@@ -115,4 +117,7 @@ Undergraduate Computer Science | AI & Deep Learning Enthusiast
 🔗 GitHub: [https://github.com/Isha-Maryam](https://github.com/Isha-Maryam)
 🔗 LinkedIn: [https://www.linkedin.com/in/isha-maryam-84ab8a327/](https://www.linkedin.com/in/isha-maryam-84ab8a327/)
 
+```
+
+---
 
