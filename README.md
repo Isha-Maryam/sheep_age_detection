@@ -71,26 +71,29 @@ sheep-age-detection/
 from tensorflow.keras.models import load_model
 model = load_model('model/sheep_age_model.h5')
 
-=> Load TensorFlow Lite Model
+### Load TensorFlow Lite Model
 import tensorflow as tf
 
 interpreter = tf.lite.Interpreter(model_path="model/sheep_age_model.tflite")
 interpreter.allocate_tensors()
+----
 
-📌 Notes
+##📌 Notes
 
 Dataset size was limited, so accuracy may vary.
 Data augmentation was used to improve performance.
 TF Lite version is suitable for mobile deployment.
 This project is part of my learning journey in Deep Learning.
+----
 
-🚀 Future Improvements
+##🚀 Future Improvements
 Increase dataset size
 Improve accuracy with fine-tuning
 Deploy model in a mobile app
 Add real-time prediction support
+----
 
-👩‍💻 Author
+##👩‍💻 Author
 
 Isha Maryam
 Undergraduate Computer Science | AI & Deep Learning Enthusiast
