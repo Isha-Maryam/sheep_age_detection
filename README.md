@@ -1,3 +1,4 @@
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-brightgreen)
@@ -22,12 +23,12 @@ This project automates the process using computer vision by analyzing sheep teet
 
 ## 🚀 Features
 
-- Deep Learning-based image classification
-- Transfer Learning for better performance on small datasets
-- Data augmentation to improve generalization
-- Supports multiple age classes
-- Model exported to **Keras (.h5)** and **TensorFlow Lite (.tflite)**
-- Visualization of accuracy, loss, and sample predictions
+- Deep Learning-based image classification  
+- Transfer Learning for better performance on small datasets  
+- Data augmentation to improve generalization  
+- Supports multiple age classes  
+- Model exported to **Keras (.h5)** and **TensorFlow Lite (.tflite)**  
+- Visualization of accuracy, loss, and sample predictions  
 
 ---
 
@@ -47,55 +48,71 @@ This project automates the process using computer vision by analyzing sheep teet
 
 ## 📁 Folder Structure
 
+```
+
 sheep-age-detection/
 │
-├── notebook/ # Training notebook (.ipynb)
-├── model/ # Saved models (.h5, .tflite)
-├── images/ # Accuracy & sample plots
+├── notebook/        # Training notebook (.ipynb)
+├── model/           # Saved models (.h5, .tflite)
+├── images/          # Accuracy & sample plots
 └── README.md
 
+````
 
 ---
 
 ## 📊 Training Results
 
-- **Final Accuracy:** ~69-75%
+- **Final Accuracy:** ~69–75%
 - Accuracy and loss graphs are available in the `images/` folder
 - Sample predictions visualized during training
+
 ---
 
 ## ▶️ How to Use
 
 ### Load Keras Model
-```python
+
 from tensorflow.keras.models import load_model
 model = load_model('model/sheep_age_model.h5')
+````
 
 ### Load TensorFlow Lite Model
+
 import tensorflow as tf
 
-interpreter = tf.lite.Interpreter(model_path="model/sheep_age_model.tflite")
+interpreter = tf.lite.Interpreter(
+    model_path="model/sheep_age_model.tflite"
+)
 interpreter.allocate_tensors()
-----
 
-##📌 Notes
 
-Dataset size was limited, so accuracy may vary.
-Data augmentation was used to improve performance.
-TF Lite version is suitable for mobile deployment.
-This project is part of my learning journey in Deep Learning.
-----
+---
 
-##🚀 Future Improvements
-Increase dataset size
-Improve accuracy with fine-tuning
-Deploy model in a mobile app
-Add real-time prediction support
-----
+## 📌 Notes
 
-##👩‍💻 Author
+* Dataset size was limited, so accuracy may vary
+* Data augmentation was used to improve performance
+* TF Lite version is suitable for mobile deployment
+* This project is part of my learning journey in Deep Learning
 
-Isha Maryam
+---
+
+## 🚀 Future Improvements
+
+* Increase dataset size
+* Improve accuracy with fine-tuning
+* Deploy model in a mobile application
+* Add real-time prediction support
+
+---
+
+## 👩‍💻 Author
+
+**Isha Maryam**
 Undergraduate Computer Science | AI & Deep Learning Enthusiast
-GitHub: https://github.com/Isha-Maryam
-LinkedIn:https://www.linkedin.com/in/isha-maryam-84ab8a327/
+
+🔗 GitHub: [https://github.com/Isha-Maryam](https://github.com/Isha-Maryam)
+🔗 LinkedIn: [https://www.linkedin.com/in/isha-maryam-84ab8a327/](https://www.linkedin.com/in/isha-maryam-84ab8a327/)
+
+
