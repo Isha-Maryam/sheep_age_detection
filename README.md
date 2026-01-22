@@ -1,31 +1,98 @@
-# Sheep Age Detection Project
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-This project is a **Sheep Teeth Age Detection system** using **Deep Learning (CNN + Transfer Learning)**.  
-The model classifies sheep teeth images into 4 classes and predicts their approximate age.
+# Sheep Age Detection Project 🐑
 
-## Features
+This project is a **Sheep Teeth Age Detection System** built using **Deep Learning (CNN + Transfer Learning)**.  
+The model predicts the **approximate age of a sheep** based on an image of its teeth.
 
-- Built with **TensorFlow / Keras**
-- Uses **Transfer Learning** to improve performance on a small dataset
-- Dataset augmented to improve accuracy
-- Includes plots for **accuracy and sample images**
-- Model saved in **Keras (.h5)** and **TF Lite (.tflite)** formats
+This project was developed as part of my deep learning practice and is intended for **educational and research purposes**.
 
-## Folder Structure
+---
 
-- `notebook/` → Colab notebook with training, plots, and outputs
-- `model/` → Saved models (`.h5` and `.tflite`)
-- `images/` → Plots and sample images
+## 🔍 Problem Statement
 
-## Training Results
+Determining the age of livestock manually is time-consuming and requires expertise.  
+This project automates the process using computer vision by analyzing sheep teeth images.
 
-- Final training **accuracy: 69-75%**  
-- Accuracy plots are available in the `images/` folder  
+---
 
-## How to Use
+## 🚀 Features
 
-1. Open the notebook in Colab or Jupyter to see training results.
-2. Load the Keras model:
+- Deep Learning-based image classification
+- Transfer Learning for better performance on small datasets
+- Data augmentation to improve generalization
+- Supports multiple age classes
+- Model exported to **Keras (.h5)** and **TensorFlow Lite (.tflite)**
+- Visualization of accuracy, loss, and sample predictions
+
+---
+
+## 🧠 Model & Approach
+
+- Framework: **TensorFlow / Keras**
+- Architecture:
+  - Pretrained CNN model (Transfer Learning)
+  - Global Average Pooling
+  - Fully connected layers
+- Dataset:
+  - 4 classes
+  - ~50–60 images per class
+  - Data augmentation applied
+
+---
+
+## 📁 Folder Structure
+
+sheep-age-detection/
+│
+├── notebook/ # Training notebook (.ipynb)
+├── model/ # Saved models (.h5, .tflite)
+├── images/ # Accuracy & sample plots
+└── README.md
+
+
+---
+
+## 📊 Training Results
+
+- **Final Accuracy:** ~69-75%
+- Accuracy and loss graphs are available in the `images/` folder
+- Sample predictions visualized during training
+---
+
+## ▶️ How to Use
+
+### Load Keras Model
 ```python
 from tensorflow.keras.models import load_model
 model = load_model('model/sheep_age_model.h5')
+
+=> Load TensorFlow Lite Model
+import tensorflow as tf
+
+interpreter = tf.lite.Interpreter(model_path="model/sheep_age_model.tflite")
+interpreter.allocate_tensors()
+
+📌 Notes
+
+Dataset size was limited, so accuracy may vary.
+Data augmentation was used to improve performance.
+TF Lite version is suitable for mobile deployment.
+This project is part of my learning journey in Deep Learning.
+
+🚀 Future Improvements
+Increase dataset size
+Improve accuracy with fine-tuning
+Deploy model in a mobile app
+Add real-time prediction support
+
+👩‍💻 Author
+
+Isha Maryam
+Undergraduate Computer Science | AI & Deep Learning Enthusiast
+GitHub: https://github.com/Isha-Maryam
+LinkedIn:https://www.linkedin.com/in/isha-maryam-84ab8a327/
