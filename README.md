@@ -16,7 +16,8 @@ This project was developed as part of my deep learning practice and is intended 
 
 ## 🔍 Problem Statement
 
-Determining the age of livestock manually is time-consuming and requires expertise.  
+Determining the age of livestock manually is time-consuming and requires expertise for
+checking qurbani eligibility. 
 This project automates the process using computer vision by analyzing sheep teeth images.
 
 ---
@@ -29,6 +30,7 @@ This project automates the process using computer vision by analyzing sheep teet
 - Supports multiple age classes  
 - Model exported to **Keras (.h5)** and **TensorFlow Lite (.tflite)**  
 - Visualization of accuracy, loss, and sample predictions  
+- Model implemented in app as well
 
 ---
 
@@ -54,7 +56,7 @@ sheep-age-detection/
 │
 ├── notebook/        # Training notebook (.ipynb)
 ├── model/           # Saved models (.h5, .tflite)
-├── images/          # Accuracy & sample plots
+├── images/          # Accuracy,loss & dataset sample images
 └── README.md
 
 ````
@@ -63,7 +65,7 @@ sheep-age-detection/
 
 ## 📊 Training Results
 
-- **Final Accuracy:** ~69–75%
+- **Final Accuracy:** ~77%
 - Accuracy and loss graphs are available in the `images/` folder
 - Sample predictions visualized during training
 
@@ -96,16 +98,7 @@ interpreter.allocate_tensors()
 * Dataset size was limited, so accuracy may vary
 * Data augmentation was used to improve performance
 * TF Lite version is suitable for mobile deployment
-* This project is part of my learning journey in Deep Learning
 
----
-
-## 🚀 Future Improvements
-
-* Increase dataset size
-* Improve accuracy with fine-tuning
-* Deploy model in a mobile application
-* Add real-time prediction support
 
 ---
 
