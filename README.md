@@ -19,7 +19,7 @@ This project was developed as part of my deep learning practice and is intended 
 The trained Sheep Age Detection model is integrated into a mobile application where users can upload a sheep teeth image and get the predicted age instantly.
 
 🔽 **Download the App From Here:**  
-👉![Download App](https://github.com/Isha-Maryam/sheep_age_detection/releases/download/Sheep-Age-Detector/app-release.apk)
+👉[![Download App](https://img.shields.io/badge/Download-App-blue?style=for-the-badge&logo=android)](https://github.com/Isha-Maryam/sheep_age_detection/releases/download/Sheep-Age-Detector/app-release.apk)
 
 ### 🔧 App Features:
 - Upload sheep teeth image
