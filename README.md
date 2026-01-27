@@ -30,8 +30,7 @@ The trained Sheep Age Detection model is integrated into a mobile application wh
 
 ### 👨‍💻 App Developed By:
 **Ziauddin Developer**   
-📌Get in Touch with Team : **ziauddindeveloper@gmail.com** 
-                            **ishamaryam69@gmail.com**
+📌Get in Touch with Team : **ziauddindeveloper@gmail.com**  and  **ishamaryam69@gmail.com**
 
 ---
 
