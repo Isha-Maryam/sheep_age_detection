@@ -128,6 +128,7 @@ interpreter.allocate_tensors()
 Undergraduate Computer Science | AI & Deep Learning Enthusiast
 
 🔗 GitHub: [https://github.com/Isha-Maryam](https://github.com/Isha-Maryam)
+🔗 Portfolio:[https://isha-maryam-ai-engineer.web.app/](https://isha-maryam-ai-engineer.web.app/)
 🔗 LinkedIn: [https://www.linkedin.com/in/isha-maryam-84ab8a327/](https://www.linkedin.com/in/isha-maryam-84ab8a327/)
 
 
