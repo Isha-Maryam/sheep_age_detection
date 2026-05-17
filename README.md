@@ -43,8 +43,9 @@ This project automates the process using computer vision by analyzing sheep teet
 ---
 
 ## 🚀 Features
-
-- Deep Learning-based image classification  
+- Yolov8 used for Sheep Integrity Check.
+- Deep Learning-based image classification  for analyzing teeth patterns.
+- Herd Management System for managing sheeps sales, expenses & health related tasks.
 - Transfer Learning for better performance on small datasets  
 - Data augmentation to improve generalization  
 - Supports multiple age classes  
@@ -85,7 +86,7 @@ sheep-age-detection/
 
 ## 📊 Training Results
 
-- **Final Accuracy:** ~77%
+- **Final Accuracy:** ~80%
 - Accuracy and loss graphs are available in the `images/` folder
 - Sample predictions visualized during training
 
